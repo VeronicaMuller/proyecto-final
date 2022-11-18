@@ -1,0 +1,232 @@
+@media screen and (min-width: 1024px){
+    .menu {
+        display: flex inline;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+#body{
+    background: linear-gradient(135deg, rgba(212, 189, 10, 0.998) 47%, #f07f46 92%);
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: #446e46;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+/*******************************/
+/********* Header CSS *********/
+/*******************************/
+
+.header {
+    background: linear-gradient(135deg, rgba(212, 189, 10, 0.998) 47%, #f07f46 92%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+    float: left;
+    margin: -30px;
+    box-shadow: 5px 5px 5px rgb(34, 36, 32);
+}
+
+menu ul{
+    text-align: right;
+}
+.menu ul{
+    display:inline-block;
+    list-style-type: none;
+    border-color: rgb(146, 55, 9);
+}
+
+.menu ul li{ 
+    font-family:cursive;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    border: 1px solid #20120199;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #ed830a99;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(34, 36, 32);
+    text-align: center;
+}
+
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    
+} 
+
+/*******************************/
+/********* Index CSS *********/
+/*******************************/
+
+.section-1 {
+    background-image:url("images/Fondo.jpg");
+    min-height: 100vh;
+    padding: 10px;
+    color: rgb(50, 50, 47);
+    font-family:cursive;
+    font-style: oblique;
+    text-align: center;
+}
+
+.section-1 h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.map{
+    min-height: 100%; 
+    position:relative;
+    display: flex;
+    justify-content:center;
+}
+
+/*******************************/
+/********* Footer CSS *********/
+/*******************************/
+
+footer{
+    display:inline-block;
+    background-color: #757e75;
+}
+
+.footer-icono{
+    float:right;
+    margin-right: 40px;
+    margin-top: 20px;
+    background-color: rgb(22, 42, 3);
+    border: 1px solid rgb(22, 42, 3);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(34, 36, 32);
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+.footer ul li a{
+    color: black;
+    text-decoration: none;
+} 
+
+.footer ul li a:hover{
+    color: blue;
+    text-decoration: none;
+} 
+
+.p-footer{
+    text-align: center;
+}
+
+
+
+/*******************************/
+/********* Contact CSS *********/
+/*******************************/
+
+.section-contact-title{
+    background-image:url("images/Fondo.jpg");
+    background-size: contain;
+    padding: 5px;
+    color: rgb(50, 50, 47);
+    font-family:cursive;
+    font-style: oblique;
+}
+
+.section-contact-title h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.section-contact-title h2{
+    text-align: center;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    background-color: #e79e0e;
+    justify-content: right;
+    display: flex;
+    background: url(images/contact.jpg) left center no-repeat;
+    background-size: contain;
+}
+
+.contact .contact-form {
+    position: relative;
+    padding: 90px 90px 90px 90px;
+    background: #e79e0e;
+}
+
+
+.contact .contact-form input {
+    padding: 40px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #141008;
+}
+
+.contact .contact-form textarea {
+    height: 90px;
+    padding: 5px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #141008;
+}
+
+.contact .contact-form .btn {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #140809;
+    background: none;
+    border: 2px solid #141008;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.btn{
+    box-shadow: 5px 5px 5px rgb(34, 36, 32);
+    padding: 15px 30px;
+}
+
+.contact .contact-form .btn:hover {
+    color: #e16e17;
+    background: #141008;
+    box-shadow: 5px 5px 5px rgb(34, 36, 32);
+}
+
+
+@media screen and (max-width: 767.98px) {
+    .contact .container-fluid {
+        background: none;
+    }
+    
+    .contact .contact-form {
+        padding: 90px 0;
+    }
+}
