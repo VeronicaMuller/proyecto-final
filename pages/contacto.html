@@ -58,7 +58,8 @@
                             <div class="col-md-4"></div>
                                 <div class="col-md-8">
                                     <div class="contact-form">
-                                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                        <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formspree.io/f/xrgddqoq"
+                                            method="POST">
                                             <div class="control-group">
                                                 <input type="text" class="form-control" id="name" placeholder="Nombre *" required="required" data-validation-required-message="Por favor ingresar nombre" />
                                                 <p class="help-block text-danger"></p>
@@ -72,7 +73,7 @@
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                             <div class="control-group">
-                                                <textarea class="form-control" id="message" placeholder="Mensaje *" required="required" data-validation-required-message="Por favor ingrese su mensaje"></textarea>
+                                                <textarea name="message" class="form-control" id="message" placeholder="Mensaje *" required="required" data-validation-required-message="Por favor ingrese su mensaje"></textarea>
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                             <div>
@@ -92,9 +93,9 @@
     <!--
     <div class="modal-wrap">
         <div class="mensaje-modal">
-            <h3>errores encontrados</h3>
+            <h3>rrores encontrados</h3>
             <p>Escriba un Nombre</p>
-            <p>Escriba un Email</p>
+            <p>Ingrese un Email</p>
             <p>Escriba un Mensaje</p>    
             <span id="btnClose">cerrar</span>
         </div>
