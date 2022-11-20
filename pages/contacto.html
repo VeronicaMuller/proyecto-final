@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- link de css -->
     <link rel="stylesheet" href="../style.css">
-
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <!-- link de JS -->
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body id="body">
     <header class="header">
@@ -44,11 +47,11 @@
         <section class="section-4">
             <section class="section-contact-title">
                 <h1 class="main-title">Contacto</h1>
-                <h2 class="title-contact" style="color: rgb(98, 105, 111);">¿Tiene alguna consulta?</h2>
-                <h2 class="title-contact" style="color: rgb(98, 105, 111);">Escribanos</h2>
+                <h2 class="title-contact">¿Tiene alguna consulta?</h2>
+                <h2 class="title-contact">Escribanos</h2>
             </section>
             
-            <div class="contact" style="margin-bottom: 90px;">
+            <div class="contact">
                 <div class="container-fluid">
                     <div class="container">
                         <div class="row align-items-center">
@@ -57,11 +60,11 @@
                                     <div class="contact-form">
                                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                             <div class="control-group">
-                                                <input type="text" class="form-control" id="name" placeholder="Nombre" required="required" data-validation-required-message="Por favor ingresar nombre" />
+                                                <input type="text" class="form-control" id="name" placeholder="Nombre *" required="required" data-validation-required-message="Por favor ingresar nombre" />
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                             <div class="control-group">
-                                                <input type="email" class="form-control" id="email" placeholder="Email" required="required" data-validation-required-message="Por favor ingresar e-mail" />
+                                                <input type="email" class="form-control" id="email" placeholder="Email *" required="required" data-validation-required-message="Por favor ingresar e-mail" />
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                             <div class="control-group">
@@ -69,7 +72,7 @@
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                             <div class="control-group">
-                                                <textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingrese su mensaje"></textarea>
+                                                <textarea class="form-control" id="message" placeholder="Mensaje *" required="required" data-validation-required-message="Por favor ingrese su mensaje"></textarea>
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                             <div>
@@ -85,6 +88,19 @@
             </div>
         </section>
     </main>
+    
+    <!--
+    <div class="modal-wrap">
+        <div class="mensaje-modal">
+            <h3>errores encontrados</h3>
+            <p>Escriba un Nombre</p>
+            <p>Escriba un Email</p>
+            <p>Escriba un Mensaje</p>    
+            <span id="btnClose">cerrar</span>
+        </div>
+    </div>
+    */-->
+    
 
     <footer class="footer"> 
         <div class="footer-div">
@@ -113,6 +129,7 @@
         </div>
     </footer>
 
+    <!-- Link Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
