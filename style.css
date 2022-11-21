@@ -218,41 +218,31 @@ footer ul li{
 /*********************************************/
 /********* Preguntas frecuentes CSS *********/
 /********************************************/
-.preguntas-frecuentes-titulo h1{
+.preguntas-frecuentes-titulo{
     text-align: center;
-}
-
-.label{
     font-weight: bolder;
+    font-size: 50px;
 }
 
 .acordeon-cuerpo{
-    display: flex;
+    margin: 0px 100px;
 }
 
-.acordeon {
-    width: 800px;
-    margin: 90px auto;
-    color: black;
-    background-color: rgb(228, 164, 16);
-    padding: 45px 45px;
+.accordion-contenedor{
+    text-align: center;
 }
 
-
-.acordeon hr {
-    width: 100;
-    margin-left: 0;
-    border: 1px solid grey;
-}
-  
-
-.acordeon hr {
-    width: 100;
-    margin-left: 0;
-    border: 1px solid grey;
+.accordion-titulo{
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bolder;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
-  
 
 /*******************************/
 /********* Contacto CSS *********/
