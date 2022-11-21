@@ -42,3 +42,12 @@ $(document).ready(function(){
     });
 
 });
+
+const label = document.getElementsByClassName('content');
+
+for (i=0; i<label.length; i++) {
+  content[i].addEventListener('click', function () {
+    this.classList.toggle('activa')
+  })
+}
+
