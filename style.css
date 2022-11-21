@@ -223,6 +223,7 @@ footer ul li{
     font-weight: bolder;
     font-size: 50px;
     text-align: center;
+    font-style: italic;
 }
 
 .acordeon-cuerpo{
@@ -233,12 +234,42 @@ footer ul li{
     text-align: center;
 }
 
-.accordion-titulo{
-    font-weight: bolder;
+.accordion-titulo {
+	font-weight: bolder;
     justify-content: end;
     align-items: center;
+    padding: 0.8rem 1rem;
+	background-color: #f37107;
+	box-shadow: 0 -1px 0 #f37107;
+	overflow: hidden;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
+.accordion-content {
+	padding: 0 1rem;
+	line-height: 0;
+	background-color: #61310a;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+    color: #C5C5C5;
+}
+
+.accordion-content.active {
+	padding: 1rem;
+	line-height: 1.4;
+	opacity: 1;
+}
+
+.accordion-titulo i {
+	float: right;
+	transition: transform 0.3s;
+}
+
+.accordion-titulo.active i {
+	transform: rotate(90deg);
+}
 
 /*******************************/
 /********* Contacto CSS *********/
