@@ -222,6 +222,7 @@ footer ul li{
     text-align: center;
     font-weight: bolder;
     font-size: 50px;
+    text-align: center;
 }
 
 .acordeon-cuerpo{
@@ -233,14 +234,9 @@ footer ul li{
 }
 
 .accordion-titulo{
-    padding: 0.5rem 3rem 0.5rem 1rem;
-    min-height: 3.5rem;
-    line-height: 1.25rem;
     font-weight: bolder;
     justify-content: end;
     align-items: center;
-    position: relative;
-    cursor: pointer;
 }
 
 
