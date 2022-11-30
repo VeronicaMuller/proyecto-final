@@ -22,7 +22,6 @@ body{
 main{
     flex-grow: 1;
     box-sizing: border-box;
-    margin: 0px 0px 15px;
 }
 
 /*******************************/
@@ -31,11 +30,10 @@ main{
 
 .header {
     background: linear-gradient(135deg, rgba(212, 189, 10, 0.998) 47%, #f07f46 92%);
-    padding: 70px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
+    padding: 30px;
+    align-content: center;
+    justify-content: space-between;
 }
 
 .logo{
@@ -44,14 +42,16 @@ main{
 }
 
 .logo img{
-    width: 150px;
+    width: 100px;
+    border-radius: 50%;
     box-shadow: 5px 5px 5px rgb(34, 36, 32);
 }
-
 
 .menu ul{
     list-style-type: none;
     border-color: rgb(146, 55, 9);
+    align-items: center;
+    margin: 15px;
 }
 
 .menu ul li{ 
@@ -62,7 +62,7 @@ main{
     font-size: 20px;
     border: 1px solid #20120199;
     border-radius: 10px;
-    margin: 10px;
+    margin: 5px;
     padding: 15px;
     background-color: #ed830a99;
     cursor: pointer;
@@ -170,6 +170,11 @@ footer ul li{
 
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  height: 40px;
+  width: 40px;
+}
+
 .section-productos-1-item{
     text-align: center;
     justify-content: space-between;
@@ -227,18 +232,18 @@ footer ul li{
 }
 
 .acordeon-cuerpo{
-    margin: 0px 100px;
+    margin: 0px 0px;
 }
 
 .accordion-contenedor{
     text-align: center;
+    margin: 20px;
 }
 
 .accordion-titulo {
 	font-weight: bolder;
     justify-content: end;
     align-items: center;
-    padding: 0.8rem 1rem;
 	background-color: #f37107;
 	box-shadow: 0 -1px 0 #f37107;
 	overflow: hidden;
@@ -247,7 +252,6 @@ footer ul li{
 }
 
 .accordion-content {
-	padding: 0 1rem;
 	line-height: 0;
 	background-color: #61310a;
 	overflow: hidden;
@@ -265,6 +269,7 @@ footer ul li{
 .accordion-titulo i {
 	float: right;
 	transition: transform 0.3s;
+    padding: 10px;
 }
 
 .accordion-titulo.active i {
